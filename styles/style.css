@@ -203,7 +203,7 @@ h1 + p {
 
 #info {
     display: flex;
-    margin-top: 9.33vw;
+    margin-top: 5vw;
     align-items: center;
 }
 
@@ -296,13 +296,12 @@ h1 + p {
 }
 
 #popular figure {
-    
     width: 90%;
     height: 38vw;
     background-color: white;
     border-radius: 5.33vw;
-    
 }
+
 #popular a {
     display: flex;
     align-items: center;
