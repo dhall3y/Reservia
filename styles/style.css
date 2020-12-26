@@ -735,6 +735,8 @@ footer li {
         object-fit: cover;
         height: 100%;
         border-radius: 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
     
     #section_2 figcaption {
@@ -754,6 +756,7 @@ footer li {
         width: 224px;
         position: relative;
         border-radius: 10px;
+
     }
     
     #section_2 span {
