@@ -71,16 +71,19 @@ nav ul a {
     border-bottom: 3px solid #f2f2f2;
     font-variation-settings: 'wght' 400;
     font-size: 4.53vw; /* 17px */
-    width: 50%;
     margin: unset;
 }
 
-nav ul a:first-of-type {
+nav ul li:first-of-type {
     border-bottom: 3px solid #0065FC
 }
 
-nav ul a:hover {
+nav ul li:hover {
     border-bottom: 3px solid #0065FC;
+}
+
+nav li {
+    width: 50%;
 }
 
 /* bottom header */
@@ -162,6 +165,8 @@ h1 + p {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    font-size: 4.53vw;
+    font-variation-settings: 'wght' 500;
 }
 
 #filter a {
@@ -170,12 +175,15 @@ h1 + p {
     border: 2px solid #f2f2f2;
     border-radius: 50vh;
     height: 13.33vw;
-    margin: 2.66vw 2.66vw 0px 0px
+    margin: 2.66vw 2.66vw 0px 0px;
 }
 
-#filter li {
-    font-size: 4.53vw;
-    margin: 0px 2.66vw 0px 14.46vw;
+#filter ul li {
+    margin: unset;
+}
+
+#filter li span {
+    margin: 0px 2.66vw 0px 15vw;
     font-variation-settings: 'wght' 500;
 }
 
@@ -229,7 +237,10 @@ h1 + p {
 
 /* section_1 */
 
-#section_1 a {
+#section_1 figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -296,13 +307,15 @@ h1 + p {
 }
 
 #popular figure {
-    width: 90%;
+    flex-direction: row;
+    width: 100%;
     height: 38vw;
     background-color: white;
     border-radius: 5.33vw;
 }
 
 #popular a {
+    width: 90%;
     display: flex;
     align-items: center;
 }
@@ -355,13 +368,14 @@ h1 + p {
 }
 
 #hebergements figure {
-    height: 16%;
     width: 100%;
     border-radius: 5.33vw;
     background-color: white;
 }
 
 #hebergements a {
+    height: 16%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +387,7 @@ h1 + p {
     justify-content: space-evenly;
     width: 90%;
     height: 35%;
-    margin-bottom: 4%;
+    margin-top: 2%;
 }
 
 #fig1_container ~ span{
@@ -412,17 +426,18 @@ h1 + p {
     border-top-right-radius: 5.33vw;
 }
 
-#section_2 figure {
+#section_2 a {
     height: 50.66vw;
-    border-radius: 5.33vw;
+    
 }
 
-#section_2 a {
+#section_2 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
+    border-radius: 5.33vw;
 }
 
 #section_2 figcaption {
@@ -509,12 +524,12 @@ footer li {
         border-top: 3px solid transparent;
     }
     
-    nav ul a:first-of-type {
+    nav ul li:first-of-type {
         border-bottom: none;
         border-top: 3px solid #0065FC
     }
     
-    nav ul a:hover {
+    nav ul li:hover {
         border-bottom: none;
     }
 
@@ -599,6 +614,10 @@ footer li {
         margin: 0 10px 0 45px;
         font-size: 14px; 
     }
+
+    #filter li span {
+        margin: 0 1vw 0 4vw;
+    }
     
     #filter a {
         height: 34px;
@@ -654,9 +673,12 @@ footer li {
     }
 
     #hebergements figure {
-        height: 150px;
-        width: 180px;
         border-radius: 10px;
+    }
+
+    #hebergements a {
+        height: unset;
+        width: 180px;
     }
     
     #hebergements img {
@@ -681,6 +703,10 @@ footer li {
         border-radius: 10px;
     }
     
+    #hebergements figcaption{
+        margin-bottom: 5%;
+    }
+
     #popular {
         margin: unset;
         width: 32%;
@@ -694,11 +720,15 @@ footer li {
     }
     
     #popular figure {
-        width: 80%;
+        width: 100%;
         height: 105px;
         border-radius: 10px;
     }
     
+    #popular a {
+        width: 80%;
+    }
+
     #popular img {
         width: 95px;
         height: 99px;
@@ -767,23 +797,23 @@ footer li {
         margin: 0px 10px 0px 10px;
     }
     
-    #section_2 figure:nth-child(1), #section_2 figure:nth-child(4) {
+    #section_2 a:nth-child(1), #section_2 a:nth-child(4) {
         height: 330px;
     }
     
-    #section_2 figure:nth-child(2) {
+    #section_2 a:nth-child(2) {
         height: 175px;
     }
     
-    #section_2 figure:nth-child(3) {
+    #section_2 a:nth-child(3) {
         height: 120px;
     }
     
-    #section_2 figure:nth-child(5) {
+    #section_2 a:nth-child(5) {
         height: 145px;
     }
     
-    #section_2 figure:nth-child(6) {
+    #section_2 a:nth-child(6) {
         height: 155px;
     }
     
